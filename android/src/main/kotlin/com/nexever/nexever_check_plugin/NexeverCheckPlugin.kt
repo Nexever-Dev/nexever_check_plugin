@@ -16,7 +16,6 @@ import java.util.ArrayList
 import java.util.Arrays
 import java.util.Scanner
 import android.os.Debug
-import com.nexever.nexever_check_plugin.BuildConfig
 
 
 class NexeverCheckPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
@@ -74,7 +73,7 @@ class NexeverCheckPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
                 Build.BRAND.contains("generic") || Build.BRAND.contains("generic_x86") ||
                 Build.DEVICE.contains("generic") || Build.DEVICE.contains("vbox") ||
                 Build.PRODUCT.contains("sdk") || Build.PRODUCT.contains("google_sdk") ||
-                Build.PRODUCT.contains("sdk_x86") || Build.PRODUCT.contains("vbox_x86")) || BuildConfig.DEBUG
+                Build.PRODUCT.contains("sdk_x86") || Build.PRODUCT.contains("vbox_x86"))
     }
 
     private fun isUsbDebuggingEnabled(): Boolean {

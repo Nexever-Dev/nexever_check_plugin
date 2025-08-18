@@ -21,3 +21,6 @@
 ## 0.0.6
 
 * TODO: Update code.
+
+## 0.0.7
+* TODO: Bugs fixes and updated to 36 api
